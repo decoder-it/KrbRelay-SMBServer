@@ -1,7 +1,7 @@
 # KrbRelay-SMBServer
 
-This version of Krbrelay is intended to act as an SMBServer (instead of DCOM) and relay the kerberos AP-REQ to CIFS or HTTP.<br>
-90% of code is taken from the great KrebRelay tool: https://github.com/cube0x0/KrbRelay<br><br>
+This version of krbrelay is intended to act as an SMBServer (instead of DCOM) and relay the kerberos AP-REQ to CIFS or HTTP.<br>
+90% of code is taken from the great KrbRelay tool: https://github.com/cube0x0/KrbRelay<br><br>
 To have control over SPN, which is mandatory for relaying Kerberos, in this case we need to use James Forshaw  *CredMasrhalTargetInfo()*  trick documented here: https://googleprojectzero.blogspot.com/2021/10/using-kerberos-for-authentication-relay.html<br><br>
 All you need is to create a DNS entry with the name of the target server you want relay in the form: *<server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA* and map it to the ip address of your listening machine.<br>Normally domain users can perform DNS secure updates.
 You can use powershell script *invoke-dnsupdate* (https://github.com/Kevin-Robertson/Powermad) for adding a DNS entry<br><br>
