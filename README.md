@@ -31,5 +31,6 @@ DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
 For detailed usage and command line switches refer to original krbrelay tool
 ````
 
-<img width="1036" alt="Screenshot 2024-10-04 135731" src="https://github.com/user-attachments/assets/e2f95aa4-6c94-4517-b6c8-d7629a19a9f4">
-<img width="1001" alt="Screenshot 2024-10-04 141231" src="https://github.com/user-attachments/assets/fd7bb972-0942-48d9-b99b-ba623f2823b0">
+<img width="848" alt="Screenshot 2024-10-07 113416" src="https://github.com/user-attachments/assets/5a91b65b-6f87-4f4f-935d-8283f587cd81">
+
+<img width="908" alt="Screenshot 2024-10-07 113227" src="https://github.com/user-attachments/assets/4b3a0be1-7fa7-4de6-aa5a-d645151483af">
