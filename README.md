@@ -24,4 +24,5 @@ DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
 -redirector: relay server mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAA
 For detailed usage and command line switches refer to original krbleay tool
 
-<img src ="./Screenshot 2024-10-04 135731.png>
+<img width="1036" alt="Screenshot 2024-10-04 135731" src="https://github.com/user-attachments/assets/e2f95aa4-6c94-4517-b6c8-d7629a19a9f4">
+<img width="1001" alt="Screenshot 2024-10-04 141231" src="https://github.com/user-attachments/assets/fd7bb972-0942-48d9-b99b-ba623f2823b0">
