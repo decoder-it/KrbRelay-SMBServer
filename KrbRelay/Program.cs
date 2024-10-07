@@ -182,24 +182,19 @@ namespace KrbRelay
 
             try
             {
-                // Get the network stream for reading and writing
-                //using (stream = client.GetStream())
+                
                 {
                     byte[] buffer = new byte[4096];
                     int bytesRead;
                     int numReads = 0;
-                    // Read data from the client asynchronously
+                
                     while ((bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length)) != 0)
                     {
-                        // Convert the data to a string
+                
                         ++numReads;
 
                         //Console.WriteLine(Program.HexDump(buffer, 16, bytesRead));
 
-
-                        //Console.WriteLine(HexDump(buffer, 16, bytesRead));
-                        //string dataReceived = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                        //Console.WriteLine("Received from client: {0}", dataReceived);
                         if (numReads == 1)
 
                         {
@@ -242,7 +237,7 @@ namespace KrbRelay
                         }
                         
                     }
-                    //Console.WriteLine("end done bytes read");
+                    
                 }
             }
             catch (Exception ex)
@@ -389,20 +384,10 @@ namespace KrbRelay
         {
             Console.WriteLine();
             Console.WriteLine("KrbRelay by @Cube0x0");
-            Console.WriteLine("The Relaying Kerberos Framework");
+            Console.WriteLine("The Relaying Kerberos Framework - SMB Server edition by @decoder_it");
             Console.WriteLine();
 
             Console.WriteLine("Usage: KrbRelay.exe -spn <SPN> [OPTIONS] [ATTACK]");
-            Console.WriteLine("LDAP attacks:");
-            Console.WriteLine("-console                         Interactive LDAP console");
-            Console.WriteLine("-rbcd <SID> <OPTIONAL TARGET>    Configure RBCD for a given SID (default target localhost)");
-            Console.WriteLine("-shadowcred <OPTIONAL TARGET>    Configure msDS-KeyCredentialLink (default target localhost)");
-            Console.WriteLine("-laps <OPTIONAL TARGET>          Dump LAPS passwords");
-            Console.WriteLine("-gMSA <OPTIONAL TARGET>          Dump gMSA passwords");
-            Console.WriteLine("-add-groupmember <GROUP> <USER>  Add user to group");
-            Console.WriteLine("-reset-password  <USER> <PASS>   Reset domain user password");
-            Console.WriteLine();
-
             Console.WriteLine("SMB attacks:");
             Console.WriteLine("-console                         Interactive SMB console");
             Console.WriteLine("-list                            List SMB shares");
@@ -428,6 +413,8 @@ namespace KrbRelay
             Console.WriteLine();
 
             Console.WriteLine("Options:");
+            Console.WriteLine("-listener <port>                      Local relay port");
+            Console.WriteLine("-redirectserver                       Relay server/redirector mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAA");
             Console.WriteLine("-ssl                      Use SSL transport");
             Console.WriteLine("-spn                      ServicePrincipalName for target service");
             Console.WriteLine("-clsid                    Service to be executed in");
