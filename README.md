@@ -4,7 +4,7 @@ This krbrelay version acts as an SMB server (instead of DCOM) to relay Kerberos 
 It's 90% based on @cube0x0's KrbRelay:  https://github.com/cube0x0/KrbRelay<br><br>
 To control the SPN for relaying, James Forshaw's *CredMarshalTargetInfo()* trick is required: https://googleprojectzero.blogspot.com/2021/10/using-kerberos-for-authentication-relay.html<br><br>
 
-Create a DNS entry for the target server_name you want to relay the kerberos AP-REQ as *<server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA*  and mapped to your listener/relay IP. <br>
+Create a DNS entry for the target server_name you want to relay the kerberos AP-REQ as: *<server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA*  and mapped to your listener/relay IP. <br>
 Domain users can typically perform secure DNS updates, for example you can use powershell script *invoke-dnsupdate* (https://github.com/Kevin-Robertson/Powermad) for adding a DNS entry<br><br>
 
 Trigger the SMB authentication with a third-party tool, for example  DFSCoerce https://github.com/Wh04m1001/DFSCoerce,  PetitPotam https://github.com/topotam/PetitPotam , etc... and relay it to the attacker machine.<br><br>
