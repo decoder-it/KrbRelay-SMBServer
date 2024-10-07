@@ -414,7 +414,7 @@ namespace KrbRelay
 
             Console.WriteLine("Options:");
             Console.WriteLine("-listener <port>                      Local relay port");
-            Console.WriteLine("-redirectserver                       Relay server/redirector mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAA");
+            Console.WriteLine("-redirectserver                       Relay server/redirector mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA");
             Console.WriteLine("-ssl                      Use SSL transport");
             Console.WriteLine("-spn                      ServicePrincipalName for target service");
             Console.WriteLine("-clsid                    Service to be executed in");
