@@ -4,10 +4,10 @@ This krbrelay version acts as an SMB server (instead of DCOM) to relay Kerberos 
 It's 90% based on @cube0x0's KrbRelay:  https://github.com/cube0x0/KrbRelay<br><br>
 To control the SPN for relaying, James Forshaw's *CredMarshalTargetInfo()* trick is required: https://googleprojectzero.blogspot.com/2021/10/using-kerberos-for-authentication-relay.html<br><br>
 
-Create a DNS entry for the target server as *<server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA* mapped to your listener/relay IP. 
+Create a DNS entry for the target server as *<server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA* mapped to your listener/relay IP. <br>
 Domain users can typically perform secure DNS updates, for example you can use powershell script *invoke-dnsupdate* (https://github.com/Kevin-Robertson/Powermad) for adding a DNS entry<br><br>
 
-Trigger the SMB authentication with a third-party tool, for example  DFSCoerce https://github.com/Wh04m1001/DFSCoerce,  PetitPotam https://github.com/topotam/PetitPotam , etc...<br><br> and relay it tou the attacker machine.
+Trigger the SMB authentication with a third-party tool, for example  DFSCoerce https://github.com/Wh04m1001/DFSCoerce,  PetitPotam https://github.com/topotam/PetitPotam , etc... and relay it tou the attacker machine.<br><br>
 Given that SMB port is 445 you have two options on the Windows attacker machine:<br>
 * use a Linux box acting as redirector
 * disable the SERVER serice on your Windows machine
