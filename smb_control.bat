@@ -17,6 +17,9 @@ if /i "%1"=="start" (
     sc start LanmanServer
     echo Services started.
 ) else if /i "%1"=="stop" (
+    echo Setting LanmanServer to disabled...
+    sc config LanmanServer start= disabled
+    
     echo Stopping services...
     sc stop LanmanServer
     sc stop srv2
