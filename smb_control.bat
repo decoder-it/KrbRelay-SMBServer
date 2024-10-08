@@ -6,7 +6,7 @@ if "%1"=="" (
     exit /b 1
 )
 
-REM Validate that the argument is either "start" or "stop"
+REM Validate that the argument is either "start" or "stop" or "status"
 if /i "%1"=="start" (
     echo Setting LanmanServer to auto-start...
     sc config LanmanServer start= auto
