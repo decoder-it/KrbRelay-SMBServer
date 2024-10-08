@@ -10,7 +10,7 @@ Domain users can typically perform secure DNS updates, for example you can use p
 Trigger the SMB authentication with a third-party tool, for example  DFSCoerce https://github.com/Wh04m1001/DFSCoerce,  PetitPotam https://github.com/topotam/PetitPotam , etc... and relay it to the attacker machine.<br><br>
 Given that SMB port is 445 you have two options on the Windows attacker machine:<br>
 * use a Linux box acting as redirector
-* disable the SERVER serice on your Windows machine -> you can use the smb_contro.bat to perform these tasks.
+* disable the SERVER serice on your Windows machine -> you can use the smb_control.bat to perform these tasks.
 <br><br>
 
 
