@@ -57,7 +57,7 @@ namespace KrbRelay.Clients
 
                     if (attacks.Keys.Contains("adcs"))
                     {
-                        //Console.WriteLine("Relayed user:{0}{1}", relayedUser, relayedUserDomain);
+                        
                         Attacks.Http.ADCS.requestCertificate(httpClient, relayedUser, relayedUserDomain, attacks["adcs"]);
                     }
 
@@ -87,7 +87,7 @@ namespace KrbRelay.Clients
                     {
                         string headerValue = header.Value.First().Replace("Negotiate ", "").Trim();
                         if (headerValue.Length < 10) {
-                            Console.WriteLine("[-] No WWW-Authenticate header returned, status code: {0}", result.StatusCode);
+                            Console.WriteLine("[-] No WWW-Authenticate header returned, status code: {0} {1] {2}", result.StatusCode, headerValue.Length, headerValue);
                             Environment.Exit(0);
                         }
                         else if (Program.ntlm)

@@ -43,7 +43,7 @@ namespace KrbRelay.Clients.Attacks.Http
             };
 
             var subject = new X509Name(cert_attribs.Keys.ToList(), cert_attribs);
-
+            Console.WriteLine("[*] Subject: {0}", subject.ToString());
             // generate the CSR
             var pkcs10CertificationRequest = new Pkcs10CertificationRequest(PkcsObjectIdentifiers.Sha256WithRsaEncryption.Id, subject, keyPair.Public, null, keyPair.Private);
             var csr = Convert.ToBase64String(pkcs10CertificationRequest.GetEncoded());

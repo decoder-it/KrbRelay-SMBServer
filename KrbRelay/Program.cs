@@ -421,6 +421,7 @@ namespace KrbRelay
             Console.WriteLine("-session                  ID for cross-session marshalling");
             Console.WriteLine("-port                     COM listener port");
             Console.WriteLine("-llmnr                    LLMNR poisoning");
+
         }
 
         public static bool checkPort(int port, string name = "SYSTEM")
@@ -848,6 +849,14 @@ namespace KrbRelay
                         clsid = args[entry.index + 1];
                         break;
 
+                    case "-RELAYEDUSER":
+                    case "/RELAYEDUSER":
+                        relayedUser = args[entry.index + 1];
+                        break;
+                    case "-RELAYEDUSERDOMAIN":
+                    case "/RELAYEDUSERDOMAIN":
+                        relayedUserDomain = args[entry.index + 1];
+                        break;
                     case "-SESSION":
                     case "/SESSION":
                         sessionID = Int32.Parse(args[entry.index + 1]);
@@ -888,6 +897,7 @@ namespace KrbRelay
                 domain = string.Join(".", d);
 
                 string[] dd = spn.Split('/').Skip(1).ToArray();
+                
                 targetFQDN = string.Join(".", dd);
 
             }
