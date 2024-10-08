@@ -47,6 +47,6 @@ if /i "%1"=="start" (
     
 ) else (
     echo Invalid argument: "%1"
-    echo Usage: smb_control.bat [start^|stop^|staus]
+    echo Usage: smb_control.bat [start^|stop^|status]
     exit /b 1
 )
