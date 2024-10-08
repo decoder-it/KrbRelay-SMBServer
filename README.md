@@ -28,6 +28,7 @@ DFSCoerce.exe -l adcs-mylab1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA  -t DC-2
 # special command line switches:
 -listener: relay listener port
 -redirecthost: relay server/redirector  mapped to the sepcial DNS entry <server_name>1UWhRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAwbEAYBAAAA
+-relayeduser, -relayeduserdomain : specify user/machine and domain, useful in certain cases (don't know exactly why) when certificate creation fails because of empty CN
 
 
 For detailed usage and command line switches refer to original krbrelay tool
