@@ -2,7 +2,7 @@
 @echo off
 :: https://posts.specterops.io/relay-your-heart-away-an-opsec-conscious-approach-to-445-takeover-1c9b4666c8ac
 if "%1"=="" (
-    echo Usage: smb_control.bat [start^|stop]
+    echo Usage: smb_control.bat [start^|stop^|status]
     exit /b 1
 )
 
@@ -47,6 +47,6 @@ if /i "%1"=="start" (
     
 ) else (
     echo Invalid argument: "%1"
-    echo Usage: smb_control.bat [start^|stop]
+    echo Usage: smb_control.bat [start^|stop^|staus]
     exit /b 1
 )
